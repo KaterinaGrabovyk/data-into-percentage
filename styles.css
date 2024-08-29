@@ -191,13 +191,16 @@ p{
 /*------------|footer|-------------*/
 footer{
     margin-top: 20px;
-    height: 100px;
+    height: 200px;
     background-color: #fa7c4e;
     margin-bottom: 0px;
     margin-right: 0px;
 }
 .content{
     border: none;
+}
+footer .text{
+width: 150px;
 }
 footer .text{
     color: rgb(255, 215, 196);
