@@ -12,12 +12,6 @@ h1{
     margin-bottom: 20px;
     color: rgb(255, 215, 196);
 }
-h2{
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: rgb(255, 215, 196);
-}
 .mainCont{
     display: flex;
     flex-direction: column;
@@ -200,6 +194,7 @@ footer{
     height: 100px;
     background-color: #fa7c4e;
     margin-bottom: 0px;
+    margin-right: 0px;
 }
 .content{
     border: none;
@@ -222,6 +217,9 @@ footer svg{
 }
 .bi-telegram:hover{
     fill: #26A5E4;
+}
+.bi-telegram::after,.bi-github::after{
+    fill: rgb(255, 215, 196);
 }
 /*---------------------------------*/
 
@@ -294,9 +292,6 @@ footer svg{
     h1{
         font-size: 3.5rem;
     }
-    h2{
-        font-size: 2rem;
-    }
     .grafic p{
         font-size: 0.8rem;
         margin-bottom: 36px;
@@ -332,6 +327,9 @@ footer svg{
         width: 40%;
         font-size: 1rem;
     }
+    .ok{
+        width: 50%;
+    }
     h1{
         font-size: 3rem;
     }
@@ -346,7 +344,54 @@ footer svg{
         font-size: 0.8rem;
     }  
 }
-
+@media(max-width:576px){
+    .data{
+        width: 90%;
+    }
+    .cell{
+        font-size: 0.6rem;
+    }
+    .N{
+        font-size: 0.9rem;
+        width: 80%;
+        height: 50px;
+    }
+    .input{
+        width: 100px;
+    }
+    .text{
+        width: 100px;
+    }
+    .number{
+        width: 50px;
+    }
+    .name{
+        width: 100%;
+    }
+    .input,.dataS p{
+        font-size: 0.7rem;
+    }
+    button{
+        width: 60%;
+        font-size: 1rem;
+    }
+    .ok{
+        width: 60%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .grafic p{
+        font-size: 0.4rem;
+        margin-bottom: 40px;
+       }
+    .lines{
+        font-size: 0.4rem;
+    }  
+    .line{
+        height: 20px;
+    }
+}
 /*---------------------------------------*/
 
 
