@@ -87,13 +87,11 @@ function mathPerc(){
         data[i]=e.toFixed(2);
     }
 }
-
 //tab button reaction
-document.addEventListener("keydown",function(event){
-    if(event.key==="Tab"){
-        dataGetter();
-        describeText();
-        all=0;
-        evr=0;
-    };
-    });
+$(".ok").click(function(){
+    dataGetter();
+    describeText();
+    all=0;
+    evr=0;
+});
+
