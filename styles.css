@@ -4,8 +4,10 @@
 }
 body{
     background-color: #7695FF;
+    font-family: "Karla", sans-serif;
 }
 h1{
+    font-family: "Karla", sans-serif;
     text-align: center;
     font-size: 4rem;
     margin-top: 20px;
@@ -200,9 +202,7 @@ footer{
     border: none;
 }
 footer .text{
-width: 150px;
-}
-footer .text{
+    width: 150px;
     color: rgb(255, 215, 196);
     font-size: 1.2rem;
 }
