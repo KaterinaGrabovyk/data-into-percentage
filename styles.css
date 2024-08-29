@@ -4,7 +4,7 @@
 }
 body{
     background-color: #7695FF;
-    font-family: "Karla", sans-serif;
+    font-family:  "JetBrains Mono", monospace;
 }
 h1{
     font-family: "Karla", sans-serif;
@@ -393,6 +393,9 @@ footer svg{
     }  
     .line{
         height: 20px;
+    }
+    ul{
+    margin-right: 30px;
     }
 }
 /*---------------------------------------*/
