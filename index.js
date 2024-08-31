@@ -1,27 +1,35 @@
 //values
 var data=[];
-var descr=[];
 var all=0;
 var inputs=$(".number").length;
 var grafs=$(".line").length;
+var descr=$(".des").length;
 // add items
 $(".add").click(function(){
     $(".data").append('<div class="dataS"><p>'+($(".dataS").length+1)+'.</p><input type="text" maxlength="15" class="input text" placeholder="describe data (15ch)"> <input type="number" min="0" class="input number" placeholder="data"></div>')
-    $(".lines").append('<div class="line n'+$(".line").length+'"></div>');
-   $(".descr").append('<p class="n'+$(".descr p").length+'"></p>');
+    $(".lines").append('<div class="line n'+$(".line").length+'">NaN%</div>');
+   $(".descr").append('<p class="des n'+$(".descr p").length+'">No description</p>');
     inputs=$(".number").length;
     grafs=$(".line").length;
+    descr=$(".des").length;
 });
 //delete items
 $(".delete").click(function(){
     var inp=$(".dataS");
     var lin=$(".line");
+    var de=$(".des");
     if(inp.length!==2){
     inp[inp.length-1].remove();
     lin[lin.length-1].remove();
+    de[de.length-1].remove();
     inputs=$(".dataS").length;
     grafs=$(".line").length;
+    descr=$(".des").length;
     data.pop();
+        dataGetter();
+        describeText();
+        all=0;
+        evr=0;
 }else{
     alert("There must be at least 2 items.");
 }
@@ -30,9 +38,10 @@ $(".delete").click(function(){
 function describeText(){
     for(var i=0;i<inputs;i++){
         if($(".input.text")[i].value!==""){
-            $("p.n"+i).text($(".input.text")[i].value);}
+            $("p.n"+i).text($(".input.text")[i].value);
+            }
         else{
-           $("p.n"+i).text("No desription");
+           $("p.n"+i).text("No description");
         }       
         
         var name=document.querySelector(".name").value;
